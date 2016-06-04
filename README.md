@@ -3,7 +3,7 @@
 需要配合jquery使用
 ##源码
 
-new function(settings) {
+    new function(settings) {
 
     var $separator = settings.separator || '&';
     var $spaces = settings.spaces === false ? false : true;
@@ -237,7 +237,7 @@ new function(settings) {
 
         return new queryObject(location.search, location.hash);
     };
-}(jQuery.query || {}); 
+    }(jQuery.query || {}); 
 
 // Pass in jQuery.query as settings object
 
