@@ -1,19 +1,10 @@
 # jquery-object.js
 用于处理路由前端取字段
+需要配合jquery使用
 ##源码
 
-/**
- * jQuery.query - Query String Modification and Creation for jQuery
- * Written by Blair Mitchelmore (blair DOT mitchelmore AT gmail DOT com)
- * Licensed under the WTFPL (http://sam.zoy.org/wtfpl/).
- * Date: 2009/8/13
- *
- * @author Blair Mitchelmore
- * @version 2.2.3
- *
- **/
 new function(settings) {
-    // Various Settings
+
     var $separator = settings.separator || '&';
     var $spaces = settings.spaces === false ? false : true;
     var $suffix = settings.suffix === false ? '' : '[]';
@@ -246,5 +237,7 @@ new function(settings) {
 
         return new queryObject(location.search, location.hash);
     };
-}(jQuery.query || {}); // Pass in jQuery.query as settings object
+}(jQuery.query || {}); 
+
+// Pass in jQuery.query as settings object
 
